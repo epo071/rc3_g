@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Budgetings on A Hugo website</title>
+    <link>/budgeting/</link>
+    <description>Recent content in Budgetings on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/budgeting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>budget maths</title>
+      <link>/budgeting/budget-maths/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/budgeting/budget-maths/</guid>
+      <description>AbstractLet’s write the formula chain that calculates the budget.\(\gamma\) is the scalar costbase.\(k\), \(p\), \(q\), \(1\) are k-dimensional vectors, respectively for cost weighting, price, quantity, column-vector of 1’s (where k is the number of cost centres to be distinguished).\(z\), \(b\) are the z-dimensional vectors resp. for budget and observed budget weightings ( where z is the number of budget lines to be distinguished)Formulas\(k\gamma= p * q\) (Hadamart product, element-wise)\(B=bk^T\) plus column-normalization ( a z by k matrix)\(z=Bk\gamma\) (Matrix multiplication)Examplegamma &amp;lt;- 1000b &amp;lt;- purrr::set_names(c(0.</description>
+    </item>
+    
+    <item>
+      <title>inducing the budget from cost</title>
+      <link>/budgeting/inducing-the-budget/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/budgeting/inducing-the-budget/</guid>
+      <description>AbstractCost Centre Budgeting is about expressing the Cost (vector of Cost Centres) in the Budget structure (vector of Cost Elements) with the formula \(z=Bk\gamma\). We take the B-matrix from observation and induce budget lines by multiplication with a given costbase (\(\gamma\)) and a distribution (\(k\)).
+NB. A further decomposition can be \(k=p*e\) where \(p\), \(e\) are resp. the price and employee weightings of \(\pi\) (average price) and \(\omega\) (total workforce).</description>
+    </item>
+    
+  </channel>
+</rss>

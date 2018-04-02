@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.37.1" />
+
+
+<title>inducing the budget from cost - A Hugo website</title>
+<meta property="og:title" content="inducing the budget from cost - A Hugo website">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">inducing the budget from cost</h1>
+
+    
+
+    <div class="article-content">
+      <div id="abstract" class="section level3">
+<h3>Abstract</h3>
+<p><strong>Cost Centre Budgeting</strong> is about expressing the <strong>Cost</strong> (vector of Cost Centres) in the <strong>Budget</strong> structure (vector of Cost Elements) with the formula <span class="math inline">\(z=Bk\gamma\)</span>. We take the <strong>B-matrix</strong> from observation and <strong>induce budget lines</strong> by multiplication with a given costbase (<span class="math inline">\(\gamma\)</span>) and a distribution (<span class="math inline">\(k\)</span>).</p>
+<p>NB. A further decomposition can be <span class="math inline">\(k=p*e\)</span> where <span class="math inline">\(p\)</span>, <span class="math inline">\(e\)</span> are resp. the price and employee weightings of <span class="math inline">\(\pi\)</span> (average price) and <span class="math inline">\(\omega\)</span> (total workforce). Hence <span class="math inline">\(\gamma= \pi*\omega\)</span>.</p>
+</div>
+<div id="how-to-induce-the-budget-with-bkgamma-or-alternatively-with-bpegamma" class="section level3">
+<h3>How to induce the Budget with <span class="math inline">\(Bk\gamma\)</span> (or alternatively with <span class="math inline">\(Bp*e\gamma\)</span> )</h3>
+<p>having <span class="math inline">\(\gamma=\)</span> 1586.294</p>
+<table>
+<caption><span id="tab:unnamed-chunk-1">Table 1: </span>This is derived from Cost !</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">z</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Allowances &amp; other benefits</td>
+<td align="right">235.231</td>
+</tr>
+<tr class="even">
+<td>Basic Salaries</td>
+<td align="right">720.159</td>
+</tr>
+<tr class="odd">
+<td>Duty travel</td>
+<td align="right">6.051</td>
+</tr>
+<tr class="even">
+<td>External experts &amp; outsourcing</td>
+<td align="right">23.898</td>
+</tr>
+<tr class="odd">
+<td>Miscellaneous expenditure on staff</td>
+<td align="right">34.627</td>
+</tr>
+<tr class="even">
+<td>Other expenses</td>
+<td align="right">237.465</td>
+</tr>
+<tr class="odd">
+<td>Pensions &amp; social security</td>
+<td align="right">321.551</td>
+</tr>
+<tr class="even">
+<td>Training</td>
+<td align="right">7.311</td>
+</tr>
+<tr class="odd">
+<td>NA</td>
+<td align="right">0.001</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="where-the-b_matrix" class="section level3">
+<h3>where the B_matrix</h3>
+<table>
+<caption><span id="tab:unnamed-chunk-2">Table 2: </span>B= column-normalized cost pivot</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">DG0</th>
+<th align="right">DG1</th>
+<th align="right">DG2</th>
+<th align="right">DG3</th>
+<th align="right">DG4</th>
+<th align="right">DG5</th>
+<th align="right">DGno</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Allowances &amp; other benefits</td>
+<td align="right">0.11</td>
+<td align="right">0.16</td>
+<td align="right">0.15</td>
+<td align="right">0.12</td>
+<td align="right">0.06</td>
+<td align="right">0.12</td>
+<td align="right">0.00</td>
+</tr>
+<tr class="even">
+<td>Basic Salaries</td>
+<td align="right">0.47</td>
+<td align="right">0.60</td>
+<td align="right">0.54</td>
+<td align="right">0.65</td>
+<td align="right">0.25</td>
+<td align="right">0.50</td>
+<td align="right">1.02</td>
+</tr>
+<tr class="odd">
+<td>Duty travel</td>
+<td align="right">0.02</td>
+<td align="right">0.00</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+<td align="right">0.01</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+</tr>
+<tr class="even">
+<td>External experts &amp; outsourcing</td>
+<td align="right">0.02</td>
+<td align="right">0.00</td>
+<td align="right">0.06</td>
+<td align="right">0.00</td>
+<td align="right">0.03</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+</tr>
+<tr class="odd">
+<td>Miscellaneous expenditure on staff</td>
+<td align="right">0.02</td>
+<td align="right">0.02</td>
+<td align="right">0.02</td>
+<td align="right">0.02</td>
+<td align="right">0.02</td>
+<td align="right">0.02</td>
+<td align="right">0.00</td>
+</tr>
+<tr class="even">
+<td>Other expenses</td>
+<td align="right">0.21</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.53</td>
+<td align="right">0.16</td>
+<td align="right">-0.02</td>
+</tr>
+<tr class="odd">
+<td>Pensions &amp; social security</td>
+<td align="right">0.15</td>
+<td align="right">0.21</td>
+<td align="right">0.21</td>
+<td align="right">0.20</td>
+<td align="right">0.09</td>
+<td align="right">0.17</td>
+<td align="right">0.00</td>
+</tr>
+<tr class="even">
+<td>Training</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+</tr>
+<tr class="odd">
+<td>NA</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="and-k-the-cost-weighting" class="section level3">
+<h3>and <strong>k</strong> the cost weighting</h3>
+<table>
+<caption><span id="tab:unnamed-chunk-3">Table 3: </span></caption>
+<thead>
+<tr class="header">
+<th align="left">CC</th>
+<th align="right">k</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">DG0</td>
+<td align="right">0.022</td>
+</tr>
+<tr class="even">
+<td align="left">DG1</td>
+<td align="right">0.708</td>
+</tr>
+<tr class="odd">
+<td align="left">DG2</td>
+<td align="right">0.067</td>
+</tr>
+<tr class="even">
+<td align="left">DG3</td>
+<td align="right">0.040</td>
+</tr>
+<tr class="odd">
+<td align="left">DG4</td>
+<td align="right">0.249</td>
+</tr>
+<tr class="even">
+<td align="left">DG5</td>
+<td align="right">0.037</td>
+</tr>
+<tr class="odd">
+<td align="left">DGno</td>
+<td align="right">-0.124</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

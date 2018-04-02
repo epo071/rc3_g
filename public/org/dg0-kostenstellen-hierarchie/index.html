@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.37.1" />
+
+
+<title>DG0 KostenStellen Hierarchie - A Hugo website</title>
+<meta property="og:title" content="DG0 KostenStellen Hierarchie - A Hugo website">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">DG0 KostenStellen Hierarchie</h1>
+
+    
+
+    <div class="article-content">
+      <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/viz/viz.js"></script>
+<link href="/rmarkdown-libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/grViz-binding/grViz.js"></script>
+
+
+<p>NB: department(blue), cost centre(red), childless(green)</p>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"diagram":"digraph {\n\ngraph [layout = \"neato\",\n       outputorder = \"edgesfirst\",\n       bgcolor = \"white\"]\n\nnode [fontname = \"Helvetica\",\n      fontsize = \"10\",\n      shape = \"circle\",\n      fixedsize = \"true\",\n      width = \"0.5\",\n      style = \"filled\",\n      fillcolor = \"aliceblue\",\n      color = \"gray70\",\n      fontcolor = \"gray50\"]\n\nedge [fontname = \"Helvetica\",\n     fontsize = \"8\",\n     len = \"1.5\",\n     color = \"gray80\",\n     arrowsize = \"0.5\"]\n\n  \"2\" [label = \"0_DP\", color = \"blue\"] \n  \"3\" [label = \"01_DP\", color = \"blue\"] \n  \"4\" [label = \"012_DP\", color = \"blue\"] \n  \"5\" [label = \"03_DP\", color = \"blue\"] \n  \"6\" [label = \"05_DP\", color = \"blue\"] \n  \"7\" [label = \"06_DP\", color = \"blue\"] \n  \"161\" [label = \"02_DP\", color = \"blue\"] \n  \"162\" [label = \"062_DP\", color = \"blue\"] \n  \"163\" [label = \"011_DP\", color = \"green\"] \n  \"164\" [label = \"0121_DP\", color = \"green\"] \n  \"165\" [label = \"0122_DP\", color = \"green\"] \n  \"166\" [label = \"0123_DP\", color = \"green\"] \n  \"167\" [label = \"0124_DP\", color = \"green\"] \n  \"168\" [label = \"0125_DP\", color = \"green\"] \n  \"169\" [label = \"013_DP\", color = \"green\"] \n  \"170\" [label = \"031_DP\", color = \"green\"] \n  \"171\" [label = \"032_DP\", color = \"green\"] \n  \"172\" [label = \"04_DP\", color = \"green\"] \n  \"173\" [label = \"051_DP\", color = \"green\"] \n  \"174\" [label = \"052_DP\", color = \"green\"] \n  \"175\" [label = \"053_DP\", color = \"green\"] \n  \"176\" [label = \"054_DP\", color = \"green\"] \n  \"177\" [label = \"061_DP\", color = \"green\"] \n  \"178\" [label = \"063_DP\", color = \"green\"] \n  \"179\" [label = \"064_DP\", color = \"green\"] \n  \"700\" [label = \"5011_CC\", color = \"red\"] \n  \"731\" [label = \"9001_CC\", color = \"red\"] \n  \"732\" [label = \"9002_CC\", color = \"red\"] \n  \"733\" [label = \"9003_CC\", color = \"red\"] \n  \"735\" [label = \"9009_CC\", color = \"red\"] \n  \"736\" [label = \"9010_CC\", color = \"red\"] \n  \"737\" [label = \"9011_CC\", color = \"red\"] \n  \"738\" [label = \"9020_CC\", color = \"red\"] \n  \"740\" [label = \"9030_CC\", color = \"red\"] \n  \"742\" [label = \"9050_CC\", color = \"red\"] \n  \"743\" [label = \"9060_CC\", color = \"red\"] \n  \"744\" [label = \"9061_CC\", color = \"red\"] \n  \"745\" [label = \"9080_CC\", color = \"red\"] \n  \"2\"->\"3\" \n  \"3\"->\"163\" \n  \"3\"->\"4\" \n  \"4\"->\"164\" \n  \"4\"->\"165\" \n  \"4\"->\"166\" \n  \"4\"->\"167\" \n  \"4\"->\"168\" \n  \"3\"->\"169\" \n  \"2\"->\"161\" \n  \"2\"->\"5\" \n  \"5\"->\"170\" \n  \"5\"->\"171\" \n  \"2\"->\"172\" \n  \"2\"->\"6\" \n  \"6\"->\"173\" \n  \"6\"->\"174\" \n  \"6\"->\"175\" \n  \"6\"->\"176\" \n  \"2\"->\"7\" \n  \"7\"->\"177\" \n  \"7\"->\"162\" \n  \"7\"->\"178\" \n  \"7\"->\"179\" \n  \"4\"->\"700\" \n  \"2\"->\"731\" \n  \"2\"->\"732\" \n  \"2\"->\"733\" \n  \"161\"->\"735\" \n  \"3\"->\"736\" \n  \"3\"->\"737\" \n  \"161\"->\"738\" \n  \"5\"->\"740\" \n  \"6\"->\"742\" \n  \"7\"->\"743\" \n  \"162\"->\"744\" \n  \"4\"->\"745\" \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

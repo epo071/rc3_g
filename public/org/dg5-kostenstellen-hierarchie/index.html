@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.37.1" />
+
+
+<title>DG5 KostenStellen Hierarchie - A Hugo website</title>
+<meta property="og:title" content="DG5 KostenStellen Hierarchie - A Hugo website">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">DG5 KostenStellen Hierarchie</h1>
+
+    
+
+    <div class="article-content">
+      <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/viz/viz.js"></script>
+<link href="/rmarkdown-libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/grViz-binding/grViz.js"></script>
+
+
+<p>NB: department(blue), cost centre(red), childless(green)</p>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"diagram":"digraph {\n\ngraph [layout = \"neato\",\n       outputorder = \"edgesfirst\",\n       bgcolor = \"white\"]\n\nnode [fontname = \"Helvetica\",\n      fontsize = \"10\",\n      shape = \"circle\",\n      fixedsize = \"true\",\n      width = \"0.5\",\n      style = \"filled\",\n      fillcolor = \"aliceblue\",\n      color = \"gray70\",\n      fontcolor = \"gray50\"]\n\nedge [fontname = \"Helvetica\",\n     fontsize = \"8\",\n     len = \"1.5\",\n     color = \"gray80\",\n     arrowsize = \"0.5\"]\n\n  \"42\" [label = \"5_DP\", color = \"blue\"] \n  \"43\" [label = \"51_DP\", color = \"blue\"] \n  \"44\" [label = \"511_DP\", color = \"blue\"] \n  \"45\" [label = \"52_DP\", color = \"blue\"] \n  \"46\" [label = \"521_DP\", color = \"blue\"] \n  \"47\" [label = \"522_DP\", color = \"blue\"] \n  \"48\" [label = \"53_DP\", color = \"blue\"] \n  \"49\" [label = \"531_DP\", color = \"blue\"] \n  \"50\" [label = \"54_DP\", color = \"blue\"] \n  \"51\" [label = \"541_DP\", color = \"blue\"] \n  \"52\" [label = \"542_DP\", color = \"blue\"] \n  \"132\" [label = \"544_DP\", color = \"blue\"] \n  \"150\" [label = \"543_DP\", color = \"blue\"] \n  \"151\" [label = \"5401_DP\", color = \"blue\"] \n  \"154\" [label = \"501_DP\", color = \"blue\"] \n  \"155\" [label = \"5111_DP\", color = \"blue\"] \n  \"156\" [label = \"513_DP\", color = \"blue\"] \n  \"158\" [label = \"502_DP\", color = \"blue\"] \n  \"159\" [label = \"512_DP\", color = \"blue\"] \n  \"160\" [label = \"534_DP\", color = \"blue\"] \n  \"273\" [label = \"503_DP\", color = \"green\"] \n  \"274\" [label = \"5211_DP\", color = \"green\"] \n  \"275\" [label = \"5212_DP\", color = \"green\"] \n  \"276\" [label = \"5213_DP\", color = \"green\"] \n  \"277\" [label = \"5221_DP\", color = \"green\"] \n  \"278\" [label = \"523_DP\", color = \"green\"] \n  \"279\" [label = \"5301_DP\", color = \"green\"] \n  \"280\" [label = \"5311_DP\", color = \"green\"] \n  \"281\" [label = \"5312_DP\", color = \"green\"] \n  \"282\" [label = \"533_DP\", color = \"green\"] \n  \"283\" [label = \"5402_DP\", color = \"green\"] \n  \"284\" [label = \"5411_DP\", color = \"green\"] \n  \"285\" [label = \"5412_DP\", color = \"green\"] \n  \"286\" [label = \"5413_DP\", color = \"green\"] \n  \"287\" [label = \"5421_DP\", color = \"green\"] \n  \"288\" [label = \"5422_DP\", color = \"green\"] \n  \"289\" [label = \"5423_DP\", color = \"green\"] \n  \"290\" [label = \"5431_DP\", color = \"green\"] \n  \"291\" [label = \"5432_DP\", color = \"green\"] \n  \"292\" [label = \"5433_DP\", color = \"green\"] \n  \"293\" [label = \"545_DP\", color = \"green\"] \n  \"294\" [label = \"5451_DP\", color = \"green\"] \n  \"482\" [label = \"2023_CC\", color = \"red\"] \n  \"677\" [label = \"4500_CC\", color = \"red\"] \n  \"679\" [label = \"4520_CC\", color = \"red\"] \n  \"681\" [label = \"4530_CC\", color = \"red\"] \n  \"682\" [label = \"4540_CC\", color = \"red\"] \n  \"683\" [label = \"4560_CC\", color = \"red\"] \n  \"697\" [label = \"5000_CC\", color = \"red\"] \n  \"701\" [label = \"5100_CC\", color = \"red\"] \n  \"702\" [label = \"5111_CC\", color = \"red\"] \n  \"704\" [label = \"5122_CC\", color = \"red\"] \n  \"707\" [label = \"5131_CC\", color = \"red\"] \n  \"709\" [label = \"5134_CC\", color = \"red\"] \n  \"710\" [label = \"5150_CC\", color = \"red\"] \n  \"712\" [label = \"5200_CC\", color = \"red\"] \n  \"713\" [label = \"5230_CC\", color = \"red\"] \n  \"714\" [label = \"5231_CC\", color = \"red\"] \n  \"715\" [label = \"5233_CC\", color = \"red\"] \n  \"717\" [label = \"5300_CC\", color = \"red\"] \n  \"718\" [label = \"5311_CC\", color = \"red\"] \n  \"719\" [label = \"5400_CC\", color = \"red\"] \n  \"42\"->\"154\" \n  \"42\"->\"158\" \n  \"42\"->\"273\" \n  \"42\"->\"43\" \n  \"43\"->\"44\" \n  \"44\"->\"155\" \n  \"43\"->\"159\" \n  \"43\"->\"156\" \n  \"42\"->\"45\" \n  \"45\"->\"46\" \n  \"46\"->\"274\" \n  \"46\"->\"275\" \n  \"46\"->\"276\" \n  \"45\"->\"47\" \n  \"47\"->\"277\" \n  \"45\"->\"278\" \n  \"42\"->\"48\" \n  \"48\"->\"279\" \n  \"48\"->\"49\" \n  \"49\"->\"280\" \n  \"49\"->\"281\" \n  \"48\"->\"282\" \n  \"48\"->\"160\" \n  \"42\"->\"50\" \n  \"50\"->\"151\" \n  \"50\"->\"283\" \n  \"50\"->\"51\" \n  \"51\"->\"284\" \n  \"51\"->\"285\" \n  \"51\"->\"286\" \n  \"50\"->\"52\" \n  \"52\"->\"287\" \n  \"52\"->\"288\" \n  \"52\"->\"289\" \n  \"42\"->\"150\" \n  \"50\"->\"290\" \n  \"50\"->\"291\" \n  \"50\"->\"292\" \n  \"50\"->\"132\" \n  \"42\"->\"293\" \n  \"50\"->\"294\" \n  \"132\"->\"482\" \n  \"50\"->\"677\" \n  \"51\"->\"679\" \n  \"52\"->\"681\" \n  \"150\"->\"682\" \n  \"151\"->\"683\" \n  \"42\"->\"697\" \n  \"154\"->\"701\" \n  \"155\"->\"702\" \n  \"156\"->\"704\" \n  \"44\"->\"707\" \n  \"158\"->\"709\" \n  \"42\"->\"710\" \n  \"45\"->\"712\" \n  \"159\"->\"713\" \n  \"159\"->\"714\" \n  \"45\"->\"715\" \n  \"48\"->\"717\" \n  \"160\"->\"718\" \n  \"50\"->\"719\" \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
